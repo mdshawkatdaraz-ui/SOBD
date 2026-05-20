@@ -1,0 +1,63 @@
+/* ============================================================
+   utilities.css — Single-purpose helpers.
+   Capped at ~25 to prevent atomic-CSS sprawl.
+   ============================================================ */
+
+/* Visibility */
+.u-sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.u-hidden { display: none !important; }
+.u-invisible { visibility: hidden; }
+
+/* Layout */
+.u-flex { display: flex; }
+.u-flex-col { display: flex; flex-direction: column; }
+.u-items-center { align-items: center; }
+.u-justify-between { justify-content: space-between; }
+.u-justify-center { justify-content: center; }
+.u-gap-2 { gap: var(--sp-2); }
+.u-gap-3 { gap: var(--sp-3); }
+.u-gap-4 { gap: var(--sp-4); }
+
+/* Text */
+.u-text-center { text-align: center; }
+.u-text-left   { text-align: left; }
+
+/* Space (vertical margin) — used sparingly */
+.u-mt-3 { margin-block-start: var(--sp-3); }
+.u-mt-4 { margin-block-start: var(--sp-4); }
+.u-mt-5 { margin-block-start: var(--sp-5); }
+
+/* Truncation / clamp */
+.u-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Aspect ratios */
+.u-ar-product { aspect-ratio: var(--ar-product); }
+.u-ar-square  { aspect-ratio: var(--ar-square); }
+.u-ar-blog    { aspect-ratio: var(--ar-blog); }
+
+/* Color helpers (very limited, only for compositions) */
+.u-text-muted   { color: var(--c-slate-500); }
+.u-text-navy    { color: var(--c-navy); }
+.u-text-success { color: var(--c-success); }
+.u-text-error   { color: var(--c-error); }
+
+/* Reset list styling for inline navs */
+.u-list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

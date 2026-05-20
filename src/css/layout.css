@@ -1,0 +1,120 @@
+/* ============================================================
+   layout.css — Container, section, grid primitives.
+   ============================================================ */
+
+/* === Container === */
+.container {
+  width: 100%;
+  max-width: var(--w-content);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.container--narrow { max-width: var(--w-narrow); }
+.container--wide   { max-width: var(--w-wide); }
+.container--bleed  { max-width: none; padding-inline: 0; }
+
+/* === Section — vertical rhythm === */
+.c-section {
+  padding-block: var(--sp-7);
+}
+.c-section--tight  { padding-block: var(--sp-5); }
+.c-section--loose  { padding-block: var(--sp-8); }
+.c-section--hero   { padding-block: 0; }
+.c-section--cloud  { background-color: var(--c-cloud-200); }
+.c-section--navy   { background-color: var(--c-navy); color: var(--c-cloud-50); }
+.c-section--navy h2,
+.c-section--navy h3 { color: var(--c-cloud-50); }
+
+@media (min-width: 1024px) {
+  .c-section          { padding-block: var(--sp-8); }
+  .c-section--loose   { padding-block: var(--sp-9); }
+}
+
+/* === Grid primitive === */
+.grid {
+  display: grid;
+  gap: var(--gap-grid);
+}
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+.grid--6 { grid-template-columns: repeat(6, 1fr); }
+
+/* Auto-responsive product grid */
+.grid--products {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .grid--products { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1024px) {
+  .grid--products { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Category grid — 2x2 -> 4x1 */
+.grid--categories {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .grid--categories { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Footer columns — 1 -> 2 -> 4 */
+.grid--footer {
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+}
+@media (min-width: 768px) {
+  .grid--footer { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .grid--footer { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Editorial split — stacked -> side by side */
+.grid--editorial {
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .grid--editorial {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-7);
+  }
+}
+
+/* Trust strip 4-up */
+.grid--trust {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-5);
+}
+@media (min-width: 768px) {
+  .grid--trust { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Instagram grid 3x2 -> 6x1 */
+.grid--instagram {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+@media (min-width: 1024px) {
+  .grid--instagram { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* PDP layout — stacked on mobile, 7/5 split on desktop */
+.grid--pdp {
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+}
+@media (min-width: 1024px) {
+  .grid--pdp {
+    grid-template-columns: 7fr 5fr;
+    gap: var(--sp-7);
+    align-items: start;
+  }
+}
+
+/* Spacing helpers at section level (rare; prefer section padding) */
+.stack > * + * { margin-block-start: var(--sp-4); }
+.stack-lg > * + * { margin-block-start: var(--sp-5); }

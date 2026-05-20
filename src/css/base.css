@@ -1,0 +1,102 @@
+/* ============================================================
+   base.css — Body defaults, typography baseline, focus.
+   ============================================================ */
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--c-slate-700);
+  background-color: var(--c-cloud-100);
+  font-feature-settings: "ss01" 1, "cv11" 1;
+}
+
+[lang="bn"], .u-lang-bn {
+  font-family: var(--ff-bn);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--c-navy);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-normal);
+}
+
+h1 { font-size: var(--fs-h1); line-height: var(--lh-tight); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+/* Paragraph */
+p { color: var(--c-slate-700); }
+
+/* Links — sky brand color, subtle underline */
+a {
+  color: var(--c-sky-700);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: none; box-shadow: var(--sh-focus); border-radius: 2px; }
+
+/* Default focus ring for interactive elements */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--sh-focus);
+  border-radius: 4px;
+}
+
+/* Skip link — visible on focus only */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--sp-4);
+  background: var(--c-navy);
+  color: var(--c-cloud-50);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-md);
+  z-index: var(--z-toast);
+  transition: top var(--dur-fast) var(--ease-soft);
+}
+.skip-link:focus-visible {
+  top: var(--sp-4);
+  text-decoration: none;
+}
+
+/* Tabular numerals utility — used on prices and numeric data */
+.u-tnum, .c-product-card__price, .c-pdp-price {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Eyebrow text style */
+.u-eyebrow {
+  display: inline-block;
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--c-slate-500);
+}
+
+/* Caption text style */
+.u-caption {
+  font-size: var(--fs-caption);
+  color: var(--c-slate-500);
+}
+
+/* Section headline pattern — eyebrow / h2 / caption stack */
+.c-section__head {
+  display: grid;
+  gap: var(--sp-2);
+  margin-block-end: var(--sp-5);
+  max-width: 60ch;
+}
+.c-section__head .u-eyebrow + h2 { margin-block-start: 0; }
+.c-section__head p { color: var(--c-slate-500); }
+
+@media (min-width: 1024px) {
+  .c-section__head { margin-block-end: var(--sp-6); }
+}

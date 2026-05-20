@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SkyOutfit — Premium baby fashion for Bangladesh</title>
+  <meta name="description" content="Soft, calm, premium baby clothing for 0-12 years. Cash on delivery, 7-day exchange, delivered across Bangladesh.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SkyOutfit — Premium baby fashion for Bangladesh">
+  <meta property="og:description" content="Soft starts. Scandinavian essentials for 0-12 years.">
+  <meta property="og:image" content="/img/og-default.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Theme settings (data-attrs picked up by JS) -->
+  <meta name="theme-color" content="#FAFAFA">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+
+  <!-- Theme settings: WhatsApp number -->
+  <meta data-whatsapp-number="8801712345678" name="x-skyoutfit-wa">
+</head>
+<body>
+
+<!-- Skip link -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Hidden token: read by JS for WhatsApp deep-link -->
+<span data-whatsapp-number="8801712345678" hidden></span>
+
+<!-- SVG sprite (in real Blogger setup, this is included once at top of body) -->
+<div hidden>
+  <object data="icons.svg" type="image/svg+xml" width="0" height="0" aria-hidden="true"></object>
+</div>
+
+<!-- 1. Announcement -->
+<div class="c-announcement" data-announcement role="region" aria-label="Site announcement">
+  <div class="c-announcement__inner container">
+    <span>Free shipping on orders over BDT 1,990 in Dhaka</span>
+  </div>
+  <button type="button" class="c-announcement__close" data-announcement-close aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+</div>
+
+<!-- 2. Header -->
+<header class="c-header" role="banner">
+  <div class="container c-header__inner">
+    <a href="/" class="c-header__logo" aria-label="SkyOutfit home">SkyOutfit</a>
+
+    <nav class="c-header__nav" aria-label="Primary">
+      <a href="/shop" data-mega-trigger aria-haspopup="true" aria-expanded="false">Shop</a>
+      <a href="/journal">Journal</a>
+      <a href="/about">About</a>
+      <a href="/help">Help</a>
+    </nav>
+
+    <div class="c-header__actions">
+      <button type="button" class="c-header__icon-btn" data-search-open aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      <button type="button" class="c-header__icon-btn" data-drawer-open="cart" aria-label="Open bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.5 12.5a2 2 0 0 0 2 1.5h7.5a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="9" cy="21" r="1.5"/><circle cx="18" cy="21" r="1.5"/></svg>
+        <span class="c-header__badge" data-cart-count data-count="0"></span>
+      </button>
+      <button type="button" class="c-header__icon-btn" data-drawer-open="menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="container">
+    <div class="c-hero">
+      <div class="c-hero__copy" data-reveal>
+        <span class="u-eyebrow">New season</span>
+        <h1 class="c-hero__title">Soft starts. Scandinavian essentials for 0&ndash;12 years.</h1>
+        <p class="c-hero__lede">Calm fabrics. Honest pricing. Free shipping on orders over BDT 1,990 in Dhaka.</p>
+        <div class="c-hero__cta">
+          <a class="c-button c-button--primary c-button--lg" href="/shop">
+            Shop New Arrivals
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 6 15 12 9 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="c-hero__media" data-reveal>
+        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=75" alt="Newborn in cream cotton bodysuit, held by parent in soft daylight" loading="eager" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CATEGORIES -->
+  <section class="c-section">
+    <div class="container">
+      <div class="c-section__head" data-reveal>
+        <span class="u-eyebrow">Shop by age</span>
+        <h2>Curated for every stage</h2>
+        <p>Four collections, soft from the first day to the playground.</p>
+      </div>
+
+      <div class="grid grid--categories" data-reveal>
+        <a class="c-cat-tile" href="/search/label/age-0-6m">
+          <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=720&q=75" alt="Newborn essentials" loading="lazy">
+          <div class="c-cat-tile__label">
+            <span class="u-eyebrow">0&ndash;6m</span>
+            <strong>Newborn</strong>
+          </div>
+        </a>
+        <a class="c-cat-tile" href="/search/label/age-6-12m">
+          <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=720&q=75" alt="Infant essentials" loading="lazy">
+          <div class="c-cat-tile__label">
+            <span class="u-eyebrow">6&ndash;12m</span>
+            <strong>Infant</strong>
+          </div>
+        </a>
+        <a class="c-cat-tile" href="/search/label/age-1-3y">
+          <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=720&q=75" alt="Toddler essentials" loading="lazy">
+          <div class="c-cat-tile__label">
+            <span class="u-eyebrow">1&ndash;3y</span>
+            <strong>Toddler</strong>
+          </div>
+        </a>
+        <a class="c-cat-tile" href="/search/label/age-4-12y">
+          <img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=720&q=75" alt="Kids and Junior" loading="lazy">
+          <div class="c-cat-tile__label">
+            <span class="u-eyebrow">4&ndash;12y</span>
+            <strong>Kids &amp; Junior</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="c-section c-section--cloud">
+    <div class="container">
+      <div class="grid grid--trust" data-reveal>
+        <div class="c-trust__item">
+          <svg class="c-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+          <strong>Cash on Delivery</strong>
+          <span>Pay when it arrives</span>
+        </div>
+        <div class="c-trust__item">
+          <svg class="c-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <strong>100% verified cotton</strong>
+          <span>Skin-safe, breathable</span>
+        </div>
+        <div class="c-trust__item">
+          <svg class="c-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 4 3 9 8 9"/><polyline points="21 20 21 15 16 15"/><path d="M4.5 9A8 8 0 0 1 19 12"/><path d="M19.5 15A8 8 0 0 1 5 12"/></svg>
+          <strong>7-day exchange</strong>
+          <span>If it doesn't fit, swap it</span>
+        </div>
+        <div class="c-trust__item">
+          <svg class="c-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/></svg>
+          <strong>Free care tips</strong>
+          <span>For every purchase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="c-section">
+    <div class="container">
+      <div class="c-section__head u-flex u-justify-between u-items-center" data-reveal style="display:flex; flex-wrap:wrap; gap: 16px;">
+        <div>
+          <span class="u-eyebrow">Newest in</span>
+          <h2>Soft picks added this week</h2>
+        </div>
+        <a class="c-button c-button--ghost c-button--sm" href="/search/label/tag-new">View all</a>
+      </div>
+
+      <div class="c-rail" data-reveal>
+        <div class="c-rail__viewport">
+
+          <!-- Card 1 -->
+          <article class="c-product-card" data-tag="new">
+            <a href="/p/soft-cotton-romper.html" class="c-product-card__link">
+              <div class="c-product-card__media">
+                <span class="c-product-card__tag">New</span>
+                <img src="https://images.unsplash.com/photo-1558944351-c66b3ce0c3d5?auto=format&fit=crop&w=720&q=75" alt="Soft Cotton Romper, cream" loading="lazy">
+              </div>
+              <div class="c-product-card__body">
+                <span class="c-product-card__eyebrow">Bodysuits</span>
+                <h3 class="c-product-card__name">Soft Cotton Romper</h3>
+                <div class="c-product-card__price-row">
+                  <span class="c-product-card__price u-tnum">BDT 1,290</span>
+                  <span class="c-product-card__price-old u-tnum">BDT 1,490</span>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="c-product-card__wishlist" aria-label="Save to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            </button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="c-product-card" data-tag="new">
+            <a href="/p/linen-daydress.html" class="c-product-card__link">
+              <div class="c-product-card__media">
+                <span class="c-product-card__tag">New</span>
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=720&q=75" alt="Linen Daydress, sage" loading="lazy">
+              </div>
+              <div class="c-product-card__body">
+                <span class="c-product-card__eyebrow">Dresses</span>
+                <h3 class="c-product-card__name">Linen Daydress in Sage</h3>
+                <div class="c-product-card__price-row">
+                  <span class="c-product-card__price u-tnum">BDT 1,690</span>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="c-product-card__wishlist" aria-label="Save to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            </button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="c-product-card" data-tag="bestseller">
+            <a href="/p/everyday-tee.html" class="c-product-card__link">
+              <div class="c-product-card__media">
+                <span class="c-product-card__tag">Bestseller</span>
+                <img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=720&q=75" alt="Everyday Tee, oat" loading="lazy">
+              </div>
+              <div class="c-product-card__body">
+                <span class="c-product-card__eyebrow">Tops</span>
+                <h3 class="c-product-card__name">Everyday Tee in Oat</h3>
+                <div class="c-product-card__price-row">
+                  <span class="c-product-card__price u-tnum">BDT 990</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="c-product-card">
+            <a href="/p/cloud-pyjama.html" class="c-product-card__link">
+              <div class="c-product-card__media">
+                <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=720&q=75" alt="Cloud Pyjama Set, navy" loading="lazy">
+              </div>
+              <div class="c-product-card__body">
+                <span class="c-product-card__eyebrow">Sleepwear</span>
+                <h3 class="c-product-card__name">Cloud Pyjama Set</h3>
+                <div class="c-product-card__price-row">
+                  <span class="c-product-card__price u-tnum">BDT 1,790</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL -->
+  <section class="c-section c-section--cloud">
+    <div class="container">
+      <div class="grid grid--editorial">
+        <div class="c-editorial__media" data-reveal>
+          <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=1080&q=75" alt="Macro view of cotton fabric weave" loading="lazy">
+        </div>
+        <div class="c-editorial__copy" data-reveal>
+          <span class="u-eyebrow">Our fabric</span>
+          <h2>Why we chose 100% combed cotton</h2>
+          <p>Babies know fabric before they know words. We chose long-staple combed cotton because it's softer against new skin, breathes through Dhaka summers, and lasts through countless washes. No synthetic blends. No surprises.</p>
+          <a class="c-button c-button--secondary" href="/about#fabric">Read our fabric story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="c-section">
+    <div class="container">
+      <div class="c-section__head" data-reveal>
+        <span class="u-eyebrow">From our parents</span>
+        <h2>Real reviews. Real comfort.</h2>
+      </div>
+
+      <div class="c-testimonials-grid" data-reveal>
+        <article class="c-testimonial">
+          <div class="c-testimonial__stars" aria-label="5 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+          </div>
+          <p class="c-testimonial__quote">"The cotton feels noticeably softer than what we used to buy. My baby fell asleep faster the first night she wore it."</p>
+          <p class="c-testimonial__author">Ayesha <span>Dhaka</span></p>
+        </article>
+        <article class="c-testimonial">
+          <div class="c-testimonial__stars" aria-label="5 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+          </div>
+          <p class="c-testimonial__quote">"Ordered Saturday night via WhatsApp, arrived Monday afternoon in Chattogram. Packaging was beautiful."</p>
+          <p class="c-testimonial__author">Tasnim <span>Chattogram</span></p>
+        </article>
+        <article class="c-testimonial">
+          <div class="c-testimonial__stars" aria-label="5 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9"/></svg>
+          </div>
+          <p class="c-testimonial__quote">"Exchange for a bigger size was effortless. They actually answered on WhatsApp within five minutes."</p>
+          <p class="c-testimonial__author">Mahfuz <span>Sylhet</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="c-section c-section--cloud">
+    <div class="container">
+      <div class="c-section__head u-text-center" data-reveal>
+        <span class="u-eyebrow">@skyoutfit</span>
+        <h2>From our world</h2>
+      </div>
+      <div class="grid grid--instagram" data-reveal>
+        <a class="c-ig-tile" href="https://instagram.com/skyoutfit"><img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=400&q=60" alt="" loading="lazy"></a>
+        <a class="c-ig-tile" href="https://instagram.com/skyoutfit"><img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=400&q=60" alt="" loading="lazy"></a>
+        <a class="c-ig-tile" href="https://instagram.com/skyoutfit"><img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=400&q=60" alt="" loading="lazy"></a>
+        <a class="c-ig-tile" href="https://instagram.com/skyoutfit"><img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=400&q=60" alt="" loading="lazy"></a>
+        <a class="c-ig-tile" href="https://instagram.com/skyoutfit"><img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=400&q=60" alt="" loading="lazy"></a>
+        <a class="c-ig-tile" href="https://instagram.com/skyoutfit"><img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=400&q=60" alt="" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="c-footer" role="contentinfo">
+  <div class="container">
+
+    <div class="c-footer__newsletter">
+      <h3>Stay in the soft lane</h3>
+      <p>Soft notes on fabric, care, and new arrivals. No spam.</p>
+      <form class="c-field c-field--inline" onsubmit="event.preventDefault();">
+        <label class="u-sr-only" for="footer-email">Email</label>
+        <input class="c-field__input" id="footer-email" type="email" inputmode="email" autocomplete="email" placeholder="your@email.com" required>
+        <button type="submit" class="c-button c-button--primary" aria-label="Subscribe">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="grid grid--footer">
+      <div class="c-footer__brand c-footer__col">
+        <h4>SkyOutfit</h4>
+        <p>House 12, Road 4<br>Banani, Dhaka 1213<br>Bangladesh</p>
+      </div>
+
+      <div class="c-footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="/search/label/age-0-6m">Newborn (0&ndash;6m)</a></li>
+          <li><a href="/search/label/age-6-12m">Infant (6&ndash;12m)</a></li>
+          <li><a href="/search/label/age-1-3y">Toddler (1&ndash;3y)</a></li>
+          <li><a href="/search/label/age-4-12y">Kids &amp; Junior</a></li>
+          <li><a href="/shop">All products</a></li>
+        </ul>
+      </div>
+
+      <div class="c-footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="/p/shipping.html">Shipping &amp; Delivery</a></li>
+          <li><a href="/p/returns.html">Returns &amp; Exchange</a></li>
+          <li><a href="/p/faq.html">FAQ</a></li>
+          <li><a href="/p/size-guide.html">Size Guide</a></li>
+          <li><a href="/p/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="c-footer__col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/skyoutfit">Instagram</a></li>
+          <li><a href="https://facebook.com/skyoutfit">Facebook</a></li>
+          <li><a href="https://wa.me/8801712345678">WhatsApp</a></li>
+          <li><a href="mailto:hello@skyoutfit.com">hello@skyoutfit.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="c-footer__pay">
+      <span>We accept</span>
+      <span class="c-pay__chip">bKash</span>
+      <span class="c-pay__chip">Nagad</span>
+      <span class="c-pay__chip">Rocket</span>
+      <span class="c-pay__chip">Cash on Delivery</span>
+    </div>
+
+    <div class="c-footer__legal">
+      <span>&copy; 2026 SkyOutfit</span>
+      <a href="/p/privacy.html">Privacy</a>
+      <a href="/p/terms.html">Terms</a>
+      <span style="margin-left: auto;">Made with care in Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart drawer -->
+<aside class="c-drawer" data-drawer="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+  <div class="c-drawer__backdrop" data-drawer-close></div>
+  <div class="c-drawer__panel">
+    <div class="c-drawer__head">
+      <h2 class="c-drawer__title" id="cart-title">Your bag</h2>
+      <button type="button" class="c-drawer__close" data-drawer-close aria-label="Close bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="c-drawer__body" data-cart-body></div>
+    <div class="c-drawer__foot">
+      <div class="c-cart-summary">
+        <span class="c-cart-summary__label">Subtotal</span>
+        <span class="c-cart-summary__value u-tnum" data-cart-subtotal>BDT 0</span>
+      </div>
+      <p class="u-caption" style="margin-bottom: 12px;">Delivery confirmed on WhatsApp</p>
+      <button type="button" class="c-button c-button--primary c-button--xl c-button--block" data-cart-checkout aria-disabled="true">
+        Order on WhatsApp
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A10.4 10.4 0 0 0 3.5 16l-1.5 5.5 5.6-1.5A10.4 10.4 0 1 0 20.5 3.5z"/></svg>
+      </button>
+    </div>
+  </div>
+</aside>
+
+<!-- Menu drawer -->
+<aside class="c-drawer c-drawer--menu" data-drawer="menu" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+  <div class="c-drawer__backdrop" data-drawer-close></div>
+  <div class="c-drawer__panel">
+    <div class="c-drawer__head">
+      <h2 class="c-drawer__title" id="menu-title">Menu</h2>
+      <button type="button" class="c-drawer__close" data-drawer-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="c-drawer__body">
+      <div class="c-menu-section">
+        <h3 class="c-menu-section__title">Shop by age</h3>
+        <ul class="c-menu-section__list">
+          <li><a href="/search/label/age-0-6m">Newborn (0&ndash;6m)</a></li>
+          <li><a href="/search/label/age-6-12m">Infant (6&ndash;12m)</a></li>
+          <li><a href="/search/label/age-1-3y">Toddler (1&ndash;3y)</a></li>
+          <li><a href="/search/label/age-4-7y">Kids (4&ndash;7y)</a></li>
+          <li><a href="/search/label/age-8-12y">Junior (8&ndash;12y)</a></li>
+        </ul>
+      </div>
+      <div class="c-menu-section">
+        <h3 class="c-menu-section__title">Shop by category</h3>
+        <ul class="c-menu-section__list">
+          <li><a href="/search/label/cat-romper">Bodysuits &amp; Rompers</a></li>
+          <li><a href="/search/label/cat-dress">Dresses</a></li>
+          <li><a href="/search/label/cat-top">Tops &amp; T-shirts</a></li>
+          <li><a href="/search/label/cat-bottom">Bottoms</a></li>
+          <li><a href="/search/label/cat-sleep">Sleepwear</a></li>
+        </ul>
+      </div>
+      <div class="c-menu-section">
+        <h3 class="c-menu-section__title">More</h3>
+        <ul class="c-menu-section__list">
+          <li><a href="/journal">Journal</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/p/help.html">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Search overlay -->
+<div class="c-search-overlay" data-search-overlay role="dialog" aria-modal="true" aria-label="Search" hidden>
+  <div class="c-search-overlay__head">
+    <form class="c-search-overlay__form" role="search">
+      <svg class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      <input type="search" inputmode="search" placeholder="Search rompers, dresses, sleepwear..." autocomplete="off" name="q">
+    </form>
+    <button type="button" class="c-search-overlay__close" data-search-close aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="c-search-overlay__body">
+    <p class="c-search-overlay__hint">Popular</p>
+    <div class="c-search-overlay__chips">
+      <a href="/search?q=romper">Romper</a>
+      <a href="/search?q=winter">Winter</a>
+      <a href="/search?q=sleepwear">Sleepwear</a>
+      <a href="/search?q=eid">Eid</a>
+      <a href="/search/label/tag-bestseller">Bestsellers</a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="c-toast" data-toast role="status" aria-live="polite"></div>
+
+<!-- Floating WhatsApp -->
+<a class="c-fab" href="https://wa.me/8801712345678" aria-label="Order on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A10.4 10.4 0 0 0 3.5 16l-1.5 5.5 5.6-1.5A10.4 10.4 0 1 0 20.5 3.5zM12 20a8 8 0 0 1-4-1.1l-.3-.2-3.3.9.9-3.2-.2-.3A8 8 0 1 1 12 20zm4.6-5.9c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.5.1-.6.8-.7 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2a.4.4 0 0 0 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.7 11.7 0 0 0 4.6 4 5 5 0 0 0 2.4.5 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c-.1-.1-.2-.1-.4-.2z"/></svg>
+</a>
+
+<!-- Bottom nav (mobile) -->
+<nav class="c-bottom-nav" aria-label="Primary mobile">
+  <ul class="c-bottom-nav__list">
+    <li class="c-bottom-nav__item"><a href="/" class="is-active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2v-9z"/></svg>
+      <span>Home</span>
+    </a></li>
+    <li class="c-bottom-nav__item"><a href="/shop">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-1 13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2L3 7z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+      <span>Shop</span>
+    </a></li>
+    <li class="c-bottom-nav__item"><a href="#" data-search-open>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      <span>Search</span>
+    </a></li>
+    <li class="c-bottom-nav__item"><a href="#" data-drawer-open="cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.5 12.5a2 2 0 0 0 2 1.5h7.5a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="9" cy="21" r="1.5"/><circle cx="18" cy="21" r="1.5"/></svg>
+      <span>Bag</span>
+      <span class="c-bottom-nav__badge" data-cart-count data-count="0"></span>
+    </a></li>
+    <li class="c-bottom-nav__item"><a href="/p/account.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 5-6 8-6s7 2 8 6"/></svg>
+      <span>Account</span>
+    </a></li>
+  </ul>
+</nav>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
